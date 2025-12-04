@@ -1,20 +1,23 @@
+
 import streamlit as st
 
 st.set_page_config(
-    page_title="Health AI",
-    page_icon="🏥",
+    page_title="Home",
+    page_icon="🏠",
 )
 
-st.title(" Medical Prediction Dashboard")
+st.write("# Welcome to my App! ")
 
-st.write("""
-Welcome to the Health AI System. This application uses Machine Learning to help predict potential health risks.
+st.markdown(
+    """
+    This is the **Home Page**   \n
+    this app consists two features \n
+    1-  EDA TOOL \n
+    2-House prediction model
+    
+    """
+)
 
-### Available Modules:
-Please select a module from the **sidebar** on the left:
+st.sidebar.success("Select a page above.")
 
-1. ** Diabetes Prediction**: Uses Logistic Regression to analyze blood/insulin levels.
-2. ** COVID-19 Probability**: Uses Decision Trees to analyze symptoms.
-""")
 
-st.sidebar.info("Select a page above to start.")
